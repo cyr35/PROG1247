@@ -1,0 +1,92 @@
+<!-- Student Name: Sergio Carvajal, Student Number: 8904989  -->
+<!-- Trying to excercise best practices
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic HTML document structure -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="A webpage dedicated to the Chilean poet Pablo Neruda, featuring his biography, images, famous quotes, and media.">
+    <meta name="keywords" content="Pablo Neruda, poetry, Chilean literature">
+    <title>Pablo Neruda - Inicio</title> <!-- Accurate title describing page content -->
+    <!-- CSS Files linked in correct order -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Semantic Elements & Nesting -->
+    <header>
+        <h1>Pablo Neruda</h1> <!-- Website heading -->
+        <hr>
+    </header>
+    <main>
+        <!-- Nesting 4 section elements inside main element -->
+        <section class="main-section" id="bio">
+            <h2>Biography</h2> <!-- Subheading -->
+            <!-- Blockquote for biography with citation and presentation elemetns -->
+            <blockquote cite="https://www.britannica.com/biography/Pablo-Neruda/Later-years" id="bio-quote">
+                <p><em>Pablo Neruda</em> was a Chilean poet and diplomat, known for his passionate love poems and involvement in communist politics. <strong>Nobel Prize winner</strong> for Literature in 1971.</p>
+                <a href="Biography.html" class="read-more">Read more</a>
+            </blockquote>
+        </section>
+        <section class="main-section" id="images">
+            <h2>Images</h2> <!-- Subheading -->
+            <!-- Figure elements for images with captions and alternative text and in this part I will put an image url // also one from the images folder -->
+            <figure class="main-section-figure" id="absolute-path-image">
+                <img src="https://media.poetryfoundation.org/uploads/media/cache/default/0001/16/3f896730abccef09708fd872214d2d290b7ce5b3.jpeg/7c506e829cf6a78325fc89d60ef33ba1" alt="Photo by Sam Falk/New York Times Co./ Getty Images" />
+                <figcaption><em>Photo by Sam Falk/New York Times Co./Getty Images</em> </figcaption>
+            </figure>
+            <figure class="main-section-figure" id="relative-path-image">
+                <img src="images/PabloNerudaReading.jpg" alt="Pablo Neruda reading" width="50px " />
+                <figcaption>Pablo Neruda reading a book</figcaption>
+            </figure>
+        </section>
+        <section class="main-section" id="quote">
+            <h2>Quote</h2> <!-- Subheading -->
+            <!-- Short quotation with citation.....-->
+            <blockquote>
+                <q>Love is so short, forgetting is so long.</q>
+                <cite>Pablo Neruda, 1959</cite>
+                <p>
+                <a href="Published.html" class="read-more">Published</a>
+            </blockquote>
+        </section>
+        <section class="main-section" id="media">
+            <h2>Media</h2> <!-- Subheading -->
+            <!-- Video or iFrame element for media -->
+            <video controls>
+                <source src="videos/neruda-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </section>
+        <section class="main-section" id="media2">
+            <div>
+                <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/223897249&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+            </div>
+        </section>
+
+
+
+<body>
+    <div class="box" align="center">
+        <a href="Gallery.html" class="read-more">Visit our gallery</a>
+</div>
+
+
+
+
+
+
+
+    </main>
+    <hr>
+    <footer>
+        <!-- Copyright symbol -->
+        <p>&copy; Sergio Carvajal, 2024</p>
+    </footer>
+</body>
+</html>
