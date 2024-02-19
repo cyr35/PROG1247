@@ -1,0 +1,42 @@
+/* Student Name: Sergio Carvajal, Student Number: 8904989 */
+/* Trying to excercise best practices */
+
+.container {
+    max-width: 960px; /* Ancho total del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    display: flex; /* Usar flexbox para la disposición */
+    padding: 10px; /* Espaciado interno */
+}
+
+.text-content {
+    width: 700px; /* Ancho para el texto */
+    margin-right: 10px; 
+}
+
+.text-content-all{
+    width: 920px;
+    margin-right: 10px;
+}
+
+.image-content {
+    width: 220px; /* Ancho para la imagen */
+    flex-shrink: 0; /* Evitar que la imagen se reduzca */
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* space between images */
+}
+
+.image {
+    flex: 1 0 calc(33.333% - 10px); /* whti this have three images per row, adjusting the gap */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.8); /* A slight shading should work for an aesthetic effect. */
+}
+
+.image img {
+    width: 90%; /* responsive images */
+    height: auto; /* proportion of the images */
+    display: block; /* Remove exta space under the image  */
+}
