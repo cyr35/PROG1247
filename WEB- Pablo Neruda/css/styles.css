@@ -1,114 +1,243 @@
 /* Student Name: Sergio Carvajal, Student Number: 8904989 */
 /* Trying to excercise best practices */
 
-/* Font: Setting up the root element font style with shorthand method */
-html {
-    font: 20px/1.5 sans-serif;
-    color: #333; /* Font color in grayscale */
-    background-color: #eee; /* Background color in grayscale */
-}
 
-/* Body: Setting width, max-width, margin, and padding */
-body {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-/* Text alignment for header and footer */
-header, footer {
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Margins for section elements */
-.main-section {
-    margin-bottom: 20px;
-}
-
-/* Font styling for headings */
-h1, h2 {
+html{
+    font-style : normal;
     font-variant: small-caps;
+    font-weight : lighter;
+    font-size : 20px;
+    line-height: .5em;
+    font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: 20px/1.5 sans-serif;
+    color: #333; 
+    background-color: #eee; 
 }
 
-/* Styling for figcaptions and blockquote citations */
-figcaption, blockquote cite {
-    font-style: italic;
+body{
+    width : 100%; 
+    max-width : 1300px; 
+    margin : auto; 
+    padding : 0.25rem; 
 }
 
-/* Blockquote styling with left border */
-blockquote {
-    margin: 20px 0;
-    padding-left: 20px;
-    border-left: 5px solid #666; 
+/*h1 element selector*/
+h1{
+    color: #333;
 }
 
-/* Image styling for responsive design */
-img {
-    width: 100%;
-    height: auto;
-    display: block;
+.headings{
+    color : black;
 }
 
-/* Video styling for responsive design */
-video {
-    width: 100%;
-    max-width: 600px;
+/* Video styling  */
+video, iframe{
+    width : 50%;
+    height : 50%;
     display: block;
     margin: 0 auto;
+
 }
 
-/* Audio styling for responsive design */
+
 #media2 iframe {
-    width: 80%; 
-    height: 100px; 
+    width: 50%; 
+    height: 50px; 
     display: block;
     margin: auto; 
 }
 
-/* Styles for the "continue reading" link */
-a.read-more {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+
+section > p{
+
+    font-variant: small-caps;
 }
 
-a.read-more:hover {
-    background-color: #555;
+footer  p{
+    align-items: center;
+
+    font-size : 0.75rem;
 }
 
-/* I don't think I'm going to use it but I'll keep it. */
-.float-right {
-    float: right;
+h2 + p {
+
+    font-style: italic;
 }
 
-.float-left {
-    float: left;
+h2 ~ p{
+
+    color :#333;
 }
 
-/* To list. */
-ul {
+h1, h2, .headings{
+    font-variant : small-caps;
+}
+
+header, footer{
+    background-image: linear-gradient(rgb(209, 218, 216) 50%, rgb(255, 255, 255));
+    margin : .25rem;
+    padding : .25rem;
+}
+.main-section{
+
+    background-color: hsla(202, 17%, 64%, 0.6);
+}
+
+.main-section-figure img{
+
+    width : 90%; 
+    height : 80%; 
+    border-radius: 1.5rem;   
+    padding : 1rem; 
+}
+#absolute-path-image{
+
+    background-color: hsla(0, 0%, 55%, 0.6);
+    border : .25rem solid rgb(128, 128, 128);
+    border-radius : 1rem; 
+    color : rgb(00, 00, 00);
+}
+
+
+#quote{
+    border : 0.1rem solid gray;
+
+    #relative-path-image{
+        background-color: hsla(128, 13%, 58%, 0.6); 
+        border : .25rem solid rgb(128, 128, 128); 
+        border-radius : 1rem; 
+        color :  rgb(128, 128, 128);
+    }
+}
+
+aside ul{
+    list-style-type: square;
+    list-style-type: circle;
+    list-style-type: disc;
     list-style-type: none;
-    padding: 0;
+}
+aside ol{
+    list-style-type: lower-alpha;
+    list-style-type: upper-alpha;
+    list-style-type: lower-roman;
+}
+nav {
+    background-color: hsla(202, 17%, 64%, 0.6);
+    padding : .25rem;
+    margin : .25rem;
+}
+nav ul{
+    text-align: center;
+    list-style-type: none;
+    padding: 0 1rem 2rem 1rem ;
+    margin : 0.25rem;
+}
+nav ul li a{
+    background-color: white;
+    border: 0.1rem solid ;
+    display : block;
+    text-decoration: none;
+    color: #333e;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+nav ul li a:hover{
+    background-color: #333;
+    border-color: white; 
+    color: white;
+}
+#home-link{
+    float : left;
+    width : 50%;
+
+}
+#contact-link{
+    float : right;
+    width : 50%;
 }
 
-li {
-    margin-bottom: 10px;
+main{
+    clear : both;
+    margin : .25rem;
+    padding : .25rem;
+    float : left;
+    width : 65%;
+}
+aside{
+    margin : .25rem;
+    float : right;
+    padding : .25rem;
+    width : 25%;
+}
+footer{
+    clear : both;
+}
+#bio{
+    float : left;
+    width : 45%;
 }
 
-.box {
-    width: 100%; 
-    padding: 3px; 
-    border: 1px solid black; 
-    margin: 0 auto;
-    border-radius: 10px;
-    background-color: lightgrey;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+#relative-path-image{
+    float : right;
+    width : 35%;
+    background-color: #eee;
+    border : .1rem solid #333;
+    border-radius : 1rem; 
+    color :  #eee;
+}
+.main-section{
+    clear: both;
+}
+table, th, td{
+    align-content: center;
+    align-items: center;
+    border : 0.80rem solid #eee;
+}
+input[type=text]{
+    width : 100%;
+}
+#gender_radio{
+    border : none;
+    padding : 1px;
+}
+input[type=text], input[type=email], textarea, select{
+    width : 100%;
+}
+input[type=radio]{
+    width : 2rem;
+    height : 2rem;
+}
+label, legend{
+    font-size: .95rem;
+    font-variant: small-caps;
+    color :#333;
+    font-weight: bolder;
+}
+
+@media (max-width : 900px){
+    html{
+        font-size : 15px;
+    }
+    #bio,  #relative-path-image {
+        float :none;
+        width : 80%;
+    }
+}
+@media (max-width : 600px){
+    html{
+        font-size : 10px;
+    }
+    #home-link,  #contact-link, main, aside {
+        float : none;
+        width : 100% 
+    }
+    aside{
+        text-align: center;
+    }
+    table{
+        align-content: center;
+        margin : auto;
+    }
+   
+
 }
