@@ -1,0 +1,209 @@
+<!-- /* Student Name: Sergio Carvajal, Student Number: 8904989 */
+/* Trying to excercise best practices */ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this is for SEO-->
+    <meta name="keywords" content="Chilean poet, writer, Nobel Prize winner in literature">
+    <!--this metadata describe the web -->
+    <!-- This is for SEO-->
+    <meta name="description" content="This web site is about Pablo Neruda.">
+    <!-- css files link-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--Define a title for my HTML title on browser toolbar-->
+    <title>PABLO NERUDA</title>
+</head>
+    <!--this is the body element-->
+<body>
+    <!--this is the semantic header element -->
+    <header>
+        <h1 id="header-heading" class="headings">Pablo Neruda - Contact us</h1>
+        <hr>
+    </header>
+    <nav>
+        <ul>
+            <li id="home-link"><a href="index.html">Home</a></li>
+            <li id="contact-link"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Contact</h2>
+        <form name="contact_form" id="contact_form" method="post" action="http://spaceclean.cl/WEB-PabloNeruda/contact.php" >
+             <div>
+                 <input type="hidden" name="userid" value="1234">
+                 <input type="hidden" name="honeypot" value="">
+             </div>
+             <fieldset>
+                 <legend>Personal Information</legend>
+                 <div>
+                     <label for="firstname">First Name</label>
+                     <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" autofocus autocomplete="off" required>
+                 </div>
+                 <div>
+                     <label for="lastname">Last Name</label>
+                     <input type="text" name="firstname" id="firstname" placeholder="Enter your last name" autofocus autocomplete="off" required>
+                 </div>
+                 <fieldset id="gender_radio">
+                     <legend>What is your gender?</legend>
+                     <input type="radio" name="gender" id="male" value="male" required >
+                     <label for="male">Male</label><br>                    
+                     <input type="radio" name="gender" id="female" value="female">
+                     <label for="female">Female</label><br>
+                     <input type="radio" name="gender" id="other" value="other">
+                     <label for="other">Other</label><br>
+                 </fieldset>
+             </fieldset>
+ 
+             <div>
+                 <label for="doc">Documents</label>
+                 <input type="file" name="doc" id="doc" multiple>
+             </div>
+             <div>
+                 <label for="comment">Comments</label>
+                 <textarea name="comment" id="comment" rows="10" cols="50"></textarea>
+             </div>
+             <div>
+                <h3>Tell us more about yourself</h3>
+                 <fieldset>
+                     <legend>How would you like to listen to poetry?</legend>
+                     <label for="youtube">Youtube</label>
+                     <input type="checkbox" name="streaming" id="youtube" value="youtube" >
+                     <label for="spotify">Spotify</label>
+                     <input type="checkbox" name="streaming" id="spotify" value="spotify">
+                     <label for="Audible">Audible</label>
+                     <input type="checkbox" name="streaming" id="audible" value="audible">
+                 </fieldset>
+                 
+              
+             </div>
+             <div>
+                 <label for="stProv">What place are you writing to us from?</label>
+                 <select id="stProv" name="stProv">
+                     <option>Select</option>
+                     <optgroup label="Cities">
+                         <option value="001">Kitchener</option>
+                         <option value="002">Waterloo</option>
+                         <option value="003">Hamilton</option>
+                         <option value="004">Barrie</option>
+                         <option value="005">Thunder Bay</option>
+                         <option value="006">Windsor</option>
+                         <option value="007">Toronto</option>
+                         <option value="008">Brampton</option>
+                     </optgroup>
+                     <optgroup label="Provinces">
+                         <option value="101">ON, Ontario</option>
+                         <option value="102">QC, Quebec</option>
+                         <option value="103">NS, Nueva Escocia</option>
+                         <option value="104">NB, New Brunswich</option>
+                         <option value="105">MB, Manitoba</option>
+                         <option value="106">BC, British Columbia</option>
+                         <option value="107">PE, Prince Edward Island</option>
+                         <option value="108">SK, Saskatchewan</option>
+                         <option value="109">AB, Alberta</option>
+                         <option value="110">NL, Newfoundland and Labrador</option>
+                      </optgroup>
+ 
+                 </select>
+             </div>
+             <div>
+                 <label for="email">Email</label>
+                 <input type="email" name="email" id="email">
+                 <label for="phone">Phone</label>
+                 <input type="tel" name="phone" id="phone"><br>
+                 <label for="dob">What is your date of birth</label>
+                 <input type="date" name="dob" id="dob" min="2000-01-01" max="2024-03-14"><br>
+             </div>
+             <div>
+                <br>
+                 <input type="reset" id="clear" name="clear" value="Clear Form">
+                 <input type="submit" id="submit" name="submit"  value="Contact Us!">
+                 <button type="submit" name="bt1" id="bt1">Submit</button>
+                 <button type="reset" name="bt2" id="bt2">Reset</button>
+ 
+             </div>
+   
+        </form>
+ 
+     </main>
+
+     <aside>
+        <h3>Activities</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Monthly</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan</td>
+                    <td>Feb</td>
+                    <td>Mar</td>
+                    <td>Apr</td>
+                </tr>
+                <tr>
+                    <td>May</td>
+                    <td>Jun</td>
+                    <td>Jul</td>
+                    <td>Agu</td>
+                </tr>
+                <tr>
+                    <td>Sep</td>
+                    <td>Oct</td>
+                    <td>Nov</td>
+                    <td>Dec</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4"><hr></th>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <h3>Miscellaneous</h3>
+        <ul>
+            <li>Poems</li>
+            <li>Life and work</li>
+            <li>Your home</li>
+        </ul>
+        <h3>Published in his Lifetime</h3>
+        <ol>
+            <li>Crepusculario. Santiago: Claridad Editions, 1923.</li>
+            <li>Attempt of the Infinite Man. Santiago: Nascimento Editorial, 1926.</li>
+            <li>The Enthusiastic Slingshooter. Santiago: Letras Company, 1933.</li>
+        </ol>
+        <h3>Description List</h3>
+        <dl>
+            <dt>Name</dt>
+            <dd>Pablo Neruda</dd>
+            <dt>Profession</dt>
+            <dd>writer</dd>
+        </dl>
+        <h3>Link of interest</h3>
+        <a href="https://youtu.be/-lTliZO85YM?si=-alZWWZqT1EvVHEQ" target="_blank">YouTube</a>
+        <br><a href="#main-heading">Back home</a>
+        <br><a href="mailto:scarvajalappelg4989@conestogac.on.ca">Contact</a>
+        <br><a href="tel:123-456-789">Call us</a>
+        <br><a href="documents/Assignment2-HTML-CSS.pdf" target="_blank">Assignment 2</a>
+        <br><a href="documents/CSS%20Box%20Model.pptx">Power Point Lesson</a>
+        <br><a href="https://youtu.be/T3TfQMbK8ks?si=e2ayodHUfz6qqiRs" target="_blank" title="Link to YouTube"><img src="images/PNeruda.png" width="100" height="100"></a>
+    </aside>
+   
+    <footer>
+        <!-- Copyright symbol -->
+        <p>&copy; Sergio Carvajal, 2024</p>
+    </footer>
+
+
+
+</body>
+</html>

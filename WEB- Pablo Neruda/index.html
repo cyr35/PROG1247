@@ -1,84 +1,179 @@
-<!-- Student Name: Sergio Carvajal, Student Number: 8904989  -->
-<!-- Trying to excercise best practices
+<!-- /* Student Name: Sergio Carvajal, Student Number: 8904989 */
+/* Trying to excercise best practices */ -->
 
- -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Basic HTML document structure -->
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="A webpage dedicated to the Chilean poet Pablo Neruda, featuring his biography, images, famous quotes, and media.">
-    <meta name="keywords" content="Pablo Neruda, poetry, Chilean literature">
-    <title>Pablo Neruda - Inicio</title> <!-- Accurate title describing page content -->
-    <!-- CSS Files linked in correct order -->
+    <!-- this is for SEO-->
+    <meta name="keywords" content="Chilean poet, writer, Nobel Prize winner in literature">
+    <!--this metadata describe the web -->
+    <!-- This is for SEO-->
+    <meta name="description" content="This web site is about Pablo Neruda.">
+    <!-- css files link-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!--Define a title for my HTML title on browser toolbar-->
+    <title>PABLO NERUDA</title>
 </head>
+    <!--this is the body element-->
 <body>
-    <!-- Semantic Elements & Nesting -->
+    <!--this is the semantic header element -->
     <header>
-        <h1>Pablo Neruda</h1> <!-- Website heading -->
+        <h1 id="header-heading" class="headings">Pablo Neruda</h1>
         <hr>
     </header>
+    <nav>
+        <ul>
+            <li id="home-link"><a href="index.html">Home</a></li>
+            <li id="contact-link"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <main>
-        <!-- Nesting 4 section elements inside main element -->
-        <section class="main-section" id="bio">
-            <h2>Biography</h2> <!-- Subheading -->
-            <!-- Blockquote for biography with citation and presentation elemetns -->
-            <blockquote cite="https://www.britannica.com/biography/Pablo-Neruda/Later-years" id="bio-quote">
-                <p><em>Pablo Neruda</em> was a Chilean poet and diplomat, known for his passionate love poems and involvement in communist politics. <strong>Nobel Prize winner</strong> for Literature in 1971.</p>
-                <a href="Biography.html" class="read-more">Read more</a>
-            </blockquote>
-        </section>
-        <section class="main-section" id="images">
-            <h2>Images</h2> <!-- Subheading -->
-            <!-- Figure elements for images with captions and alternative text and in this part I will put an image url // also one from the images folder -->
-            <figure class="main-section-figure" id="absolute-path-image">
-                <img src="https://media.poetryfoundation.org/uploads/media/cache/default/0001/16/3f896730abccef09708fd872214d2d290b7ce5b3.jpeg/7c506e829cf6a78325fc89d60ef33ba1" alt="Photo by Sam Falk/New York Times Co./ Getty Images" />
-                <figcaption><em>Photo by Sam Falk/New York Times Co./Getty Images</em> </figcaption>
-            </figure>
-            <figure class="main-section-figure" id="relative-path-image">
-                <img src="images/PabloNerudaReading.jpg" alt="Pablo Neruda reading" width="50px " />
-                <figcaption>Pablo Neruda reading a book</figcaption>
-            </figure>
-        </section>
-        <section class="main-section" id="quote">
-            <h2>Quote</h2> <!-- Subheading -->
-            <!-- Short quotation with citation.....-->
-            <blockquote>
-                <q>Love is so short, forgetting is so long.</q>
-                <cite>Pablo Neruda, 1959</cite>
-                <p>
-                <a href="Published.html" class="read-more">Published</a>
-            </blockquote>
-        </section>
-        <section class="main-section" id="media">
-            <h2>Media</h2> <!-- Subheading -->
-            <!-- Video or iFrame element for media -->
-            <video controls>
-                <source src="videos/neruda-video.mp4" type="video/mp4">  <!-- video size is 75Mb but only upload 25Mb   -->
-                Your browser does not support the video tag.
-            </video>
-
-        </section>
-        <section class="main-section" id="media2">
+        <section class="main-section" >
+            <h2 id="main-heading">Biography</h2>
             <div>
-                <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/223897249&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                <!--This is a blockquote element  -->             
+                <blockquote id="bio" cite="https://www.britannica.com/biography/Pablo-Neruda">
+                    <p><b>Ricardo Eliécer Neftalí Reyes Basoalto</b> (born July 12, 1904, Parral, Chile—died September 23, 1973, Santiago) Chilean poet, diplomat, and politician who was awarded the <strong>Nobel Prize for Literature</strong> in 1971. He is perhaps the most important Latin American poet of the 20th century.</p>
+                </blockquote>
+                <figure id="relative-path-image"  class="main-section-figure">
+                    <img src="images/Pablo_Neruda_1963.jpg" alt="Pablo Neruda, 1963.">
+                </figure> 
             </div>
         </section>
-
-        <body>
-            <div class="box" align="center">
-                <a href="Gallery.html" class="read-more">Visit our gallery</a>
+         
+        <section class="main-section">
+              
+        <h2 id="main-heading">Early life and love poetry</h2>
+        <div>
+        <p>Peruda was the son of José del Carmen Reyes, a railway worker, and Rosa Basoalto.
+            His mother died within a month of his birth, and two years later the family moved to Temuco,
+            a small town farther south in Chile, where his father remarried. Neruda was a precocious boy
+             who began to write poetry at age 10. His father tried to discourage him from writing and never 
+             cared for his poems, which was probably why the young poet began to publish under the pseudonym 
+             Pablo Neruda, which he was legally to adopt in 1946. He entered the Temuco Boys’ School in 1910 
+             and finished his secondary schooling there in 1920. Tall, shy, and lonely, Neruda read voraciously 
+             and was encouraged by the principal of the Temuco Girls’ School, Gabriela Mistral, a gifted poet 
+             who would herself later become a Nobel laureate</p>
+        <p>Neruda first published his poems in the local newspapers and later in magazines published in the 
+            Chilean capital, Santiago. In 1921 he moved to Santiago to continue his studies and become a French teacher. 
+            There he experienced loneliness and hunger and took up a bohemian lifestyle. His first book of poems, Crepusculario, 
+            was published in 1923. The poems, subtle and elegant, were in the tradition of Symbolist poetry, or rather its Hispanic version, 
+            Modernismo. His second book, Veinte poemas de amor y una canción desesperada (1924; Twenty Love Poems and a Song of Despair), 
+            was inspired by an unhappy love affair. It became an instant success and is still one of Neruda’s most popular books. 
+            The verse in Twenty Love Poems is vigorous, poignant, and direct, yet subtle and very original in its imagery and metaphors. 
+            The poems express young, passionate, unhappy love perhaps better than any book of poetry in the long Romantic tradition.</p>
         </div>
+        </section>  
+        <!--this div is a block grouping element-->
+        <div>
+            <section class="main-section">
+            </section>
+            <section class="main-section">
+            </section>
+        </div>
+     
+        <section class="main-section">
+            <h2>Quote</h2>
+            <!--This is a blockquote-->
+            <blockquote id="quote" cite="https://www.goodreads.com/es/book/show/5937">
+                <q>Love is so short, forgetting is so long. Pablo Neruda, 1959</q>
+                <br>
+                <cite>Pablo Neruda</cite>
+            </blockquote>
+        </section>
 
+        </section>
+        <section class="main-section" id="media2" >
+            <h2>Media</h2>
+            <video controls>
+                <source src="videos/neruda-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+            <div>
+                <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/223897249&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+            <p></p>
+            </div>
+            <p></p>
+
+        </section>
+        <section class="main-section">
     </main>
-    <hr>
+    <aside>
+        <h3>Activities</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Monthly</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan</td>
+                    <td>Feb</td>
+                    <td>Mar</td>
+                    <td>Apr</td>
+                </tr>
+                <tr>
+                    <td>May</td>
+                    <td>Jun</td>
+                    <td>Jul</td>
+                    <td>Agu</td>
+                </tr>
+                <tr>
+                    <td>Sep</td>
+                    <td>Oct</td>
+                    <td>Nov</td>
+                    <td>Dec</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4"><hr></th>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <h3>Miscellaneous</h3>
+        <ul>
+            <li>Poems</li>
+            <li>Life and work</li>
+            <li>Your home</li>
+        </ul>
+        <h3>Published in his Lifetime</h3>
+        <ol>
+            <li>Crepusculario. Santiago: Claridad Editions, 1923.</li>
+            <li>Attempt of the Infinite Man. Santiago: Nascimento Editorial, 1926.</li>
+            <li>The Enthusiastic Slingshooter. Santiago: Letras Company, 1933.</li>
+        </ol>
+        <h3>Description List</h3>
+        <dl>
+            <dt>Name</dt>
+            <dd>Pablo Neruda</dd>
+            <dt>Profession</dt>
+            <dd>writer</dd>
+        </dl>
+        <h3>Link of interest</h3>
+        <a href="https://youtu.be/-lTliZO85YM?si=-alZWWZqT1EvVHEQ" target="_blank">YouTube</a>
+        <br><a href="#main-heading">Back home</a>
+        <br><a href="mailto:scarvajalappelg4989@conestogac.on.ca">Contact</a>
+        <br><a href="tel:123-456-789">Call us</a>
+        <br><a href="documents/Assignment2-HTML-CSS.pdf" target="_blank">Assignment 2</a>
+        <br><a href="documents/CSS%20Box%20Model.pptx">Power Point Lesson</a>
+        <br><a href="https://youtu.be/T3TfQMbK8ks?si=e2ayodHUfz6qqiRs" target="_blank" title="Link to YouTube"><img src="images/PNeruda.png" width="100" height="100"></a>
+    </aside>
+   
     <footer>
         <!-- Copyright symbol -->
         <p>&copy; Sergio Carvajal, 2024</p>
     </footer>
+
+
+
 </body>
 </html>
